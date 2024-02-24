@@ -34,3 +34,16 @@ static string[] FilterStrings(string[] array)
         }
     }
 }
+
+string[] resultArray = new string[newSize];
+int resultIndex = 0;
+
+for(int i = 0; i < array.Length; i++)
+{
+    if(array[i].Length <= 3)
+    {
+        resultArray[resultIndex] = array[i];
+        resultIndex++;
+    }
+}
+return resultArray;
